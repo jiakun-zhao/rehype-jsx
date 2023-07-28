@@ -1,0 +1,56 @@
+{
+  "name": "rehype-jsx",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "rehype plugin to Jsx",
+  "author": "Jiakun Zhao <hi@zhaojiakun.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jiakun-zhao/rehype-jsx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiakun-zhao/rehype-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiakun-zhao/rehype-jsx/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp && pnpm publish && npx cnpm sync rehype-jsx",
+    "test": "vitest -u"
+  },
+  "peerDependencies": {
+    "unified": "^10.1.2"
+  },
+  "dependencies": {
+    "estree-util-to-js": "^1.2.0",
+    "hast-util-to-estree": "^2.3.3"
+  },
+  "devDependencies": {
+    "@jiakun-zhao/eslint-config": "^1.2.0",
+    "@types/node": "^20.4.5",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.45.0",
+    "rehype": "^12.0.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1",
+    "unified": "^10.1.2",
+    "vitest": "^0.33.0"
+  },
+  "eslintConfig": {
+    "extends": "@jiakun-zhao"
+  }
+}
