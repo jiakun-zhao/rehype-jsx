@@ -38,7 +38,7 @@ export default function rehypeJsx(this: Processor, options: Options) {
             return _node
           const argument: Identifier = {
             type: 'Identifier',
-            name: appendToMods(`_image_${Object.keys(mods).length}_`, _node.value.value),
+            name: appendToMods(`__image_${Object.keys(mods).length}__`, _node.value.value),
           }
           return createJSXSpreadAttribute(argument)
         })

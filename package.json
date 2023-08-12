@@ -54,6 +54,9 @@
     "unified": "^10.1.2"
   },
   "eslintConfig": {
-    "extends": "@jiakun-zhao"
+    "extends": "@jiakun-zhao",
+    "rules": {
+      "react/jsx-indent": "off"
+    }
   }
 }
