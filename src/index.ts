@@ -13,6 +13,11 @@ export default function rehypeJsx(this: Processor, options: Options) {
   this.Compiler = function (hast: HastNodes): string {
     const wrapper = toCompName('Wrapper')
     const mods: Record<string, string> = { [wrapper]: options.wrapper }
+    const components = new Map<string, string>()
+
+    Object.entries(options.components ?? {}).forEach(([key, value]) => {
+      components.set(key.toLowerCase(), value)
+    })
 
     function appendToMods(name: string, value: string) {
       mods[name] = value
@@ -21,8 +26,8 @@ export default function rehypeJsx(this: Processor, options: Options) {
 
     if (options.components) {
       visit(hast, 'element', (node) => {
-        if (node.tagName in options.components!)
-          node.tagName = appendToMods(toCompName(node.tagName), options.components![node.tagName])
+        if (components.has(node.tagName))
+          node.tagName = appendToMods(toCompName(node.tagName), components.get(node.tagName)!)
       })
     }
 
