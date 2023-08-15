@@ -37,16 +37,11 @@
   },
   "dependencies": {
     "estree-util-to-js": "^2.0.0",
-    "estree-util-value-to-estree": "^3.0.1",
-    "estree-util-visit": "^2.0.0",
-    "hast-util-to-estree": "^3.0.0",
-    "unist-util-visit": "^5.0.0"
+    "hast-util-to-estree": "^3.0.0"
   },
   "devDependencies": {
     "@jiakun-zhao/eslint-config": "^1.2.1",
-    "@types/estree-jsx": "^1.0.0",
-    "@types/hast": "^3.0.0",
-    "@types/node": "^20.4.10",
+    "@types/node": "^20.5.0",
     "bumpp": "^9.1.1",
     "eslint": "^8.47.0",
     "typescript": "^5.1.6",
