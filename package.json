@@ -16,8 +16,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -37,21 +37,18 @@
   },
   "dependencies": {
     "estree-util-to-js": "^2.0.0",
-    "hast-util-to-estree": "^3.0.0"
+    "hast-util-to-estree": "^3.1.0"
   },
   "devDependencies": {
-    "@jiakun-zhao/eslint-config": "^1.2.1",
-    "@types/node": "^20.5.0",
-    "bumpp": "^9.1.1",
-    "eslint": "^8.47.0",
-    "typescript": "^5.1.6",
-    "unbuild": "^1.2.1",
-    "unified": "^10.1.2"
+    "@jiakun-zhao/eslint-config": "^1.2.7",
+    "@types/node": "^20.8.2",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.50.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "unified": "^11.0.3"
   },
   "eslintConfig": {
-    "extends": "@jiakun-zhao",
-    "rules": {
-      "react/jsx-indent": "off"
-    }
+    "extends": "@jiakun-zhao"
   }
 }
