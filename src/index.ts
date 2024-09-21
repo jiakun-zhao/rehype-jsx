@@ -1,6 +1,6 @@
+import type { Options } from 'hast-util-to-estree'
 import type { Processor } from 'unified'
 import { jsx, toJs } from 'estree-util-to-js'
-import type { Options } from 'hast-util-to-estree'
 import { toEstree } from 'hast-util-to-estree'
 
 export default function rehypeJsx(this: Processor, options?: Options) {
