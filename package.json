@@ -1,8 +1,8 @@
 {
   "name": "rehype-jsx",
   "type": "module",
-  "version": "1.0.0",
-  "description": "rehype plugin to Jsx",
+  "version": "0.3.1",
+  "description": "rehype plugin to JSX",
   "author": "Jiakun Zhao <hi@zhaojiakun.com>",
   "license": "MIT",
   "homepage": "https://github.com/jiakun-zhao/rehype-jsx#readme",
@@ -40,15 +40,14 @@
     "hast-util-to-estree": "^3.1.0"
   },
   "devDependencies": {
-    "@jiakun-zhao/eslint-config": "^1.2.7",
-    "@types/node": "^20.8.2",
-    "bumpp": "^9.2.0",
-    "eslint": "^8.50.0",
-    "typescript": "^5.2.2",
+    "@antfu/eslint-config": "^3.7.1",
+    "@types/node": "^22.5.5",
+    "bumpp": "^9.5.2",
+    "eslint": "^9.11.0",
+    "rehype": "^13.0.1",
+    "typescript": "^5.6.2",
     "unbuild": "^2.0.0",
-    "unified": "^11.0.3"
-  },
-  "eslintConfig": {
-    "extends": "@jiakun-zhao"
+    "unified": "^11.0.5",
+    "vitest": "^2.1.1"
   }
 }
