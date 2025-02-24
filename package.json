@@ -1,7 +1,7 @@
 {
   "name": "rehype-jsx",
   "type": "module",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Rehype Plugin to JSX",
   "author": "Jiakun Zhao <hi@zhaojiakun.com>",
   "license": "MIT",
