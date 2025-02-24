@@ -2,7 +2,7 @@
 
 ![npm version](https://img.shields.io/npm/v/rehype-jsx?color=%23954)
 
-rehype plugin to JSX.
+Rehype Plugin to JSX
 
 #### Install
 

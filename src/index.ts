@@ -6,6 +6,7 @@ import { toEstree } from 'hast-util-to-estree'
 export default function rehypeJsx(this: Processor, options?: Options) {
   this.compiler = function (root: any): string {
     const tree = toEstree(root, options ?? { elementAttributeNameCase: 'html', stylePropertyNameCase: 'css' })
+    // @ts-expect-error I don't known...but it works...
     return toJs(tree, { handlers: jsx }).value
   }
 }
