@@ -4,27 +4,26 @@
 
 Rehype Plugin to JSX
 
-#### Install
+### Install
 
 ```bash
 npm install rehype-jsx
 ```
 
-#### Usage
+### Usage
 
 ```ts
 import rehype from 'rehype'
 import rehypeJsx from 'rehype-jsx'
 
-rehype()
+const { value } = await rehype()
   .data('settings', { fragment: true })
   .use(rehypeJsx)
   .process('<div>Hello World</div>')
-  .then(({ value }) => {
-    console.log(value) // <><div>{"Hello World"}</div></>;
-  })
+
+expect(value.toString().trim()).toMatchInlineSnapshot(`"<><div>{"Hello World"}</div></>;"`)
 ```
 
-#### License
+### LICENSE
 
-MIT
+MIT License © 2025-PRESENT [Jiakun Zhao](https://github.com/jiakun-zhao)
